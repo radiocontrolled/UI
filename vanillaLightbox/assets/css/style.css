@@ -4,12 +4,10 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #555555;
-  
 }
 
-body .contain {
+div.contain {
     padding: 1em;
-      width: 1200px;
 }
 
 ul li {
@@ -55,11 +53,12 @@ ul li {
     .contain {
         margin: 0 auto;
         text-align: center;
+        width: 1200px;
     }
     img {
-       padding: 1%;
-       width: 30%;
+       width: 33%;
        float: left;
+       margin: .1em;
     }
 
     footer {
@@ -70,20 +69,26 @@ ul li {
 
 /* Lightbox CSS */
 #lightbox {
+    
     background: url("../images/background.png") repeat !important;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    text-align:center;
+    display:table-cell;
+    margin: 0 auto;
+	vertical-align:middle;
 }
 
-#lightbox>img {
 
-    max-width: 50%;
-    text-align: center!important;
-    margin: 0 auto!important;
-    width: inherit;
-    float: none;
-    z-index: 1000000;
+
+#lightbox>img {
+	position:relative;
+	height:200px;
+	top: 200px;
+	margin: 0 auto;
+	float: none;
+	border:1px solid grey;
 }

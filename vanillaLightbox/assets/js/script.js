@@ -1,10 +1,6 @@
-
-
-/*global document: false */
-
 var insert = null,
-     child = null,
-     image = null;
+    child = null,
+    image = null;
 var lightbox = document.getElementById("lightbox");
 var matches = document.querySelectorAll("a.dialog");
 var images = document.querySelectorAll("img");
